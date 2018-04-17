@@ -1,0 +1,53 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "global weather",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.SearchAction<object@WeatherForecast>",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.SearchAction<object@WeatherForecast[temperature]>",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.SearchAction<object@WeatherForecast[weatherCondition]>",
+                    "samples": []
+                },
+                {
+                    "name": "TodayWeatherSummaryIntent",
+                    "slots": [
+                        {
+                            "name": "Location",
+                            "type": "AMAZON.Country"
+                        }
+                    ],
+                    "samples": [
+                        "TodayWeatherSummaryIntent for {Location}",
+                        "TodayWeatherSummaryIntent weather for {Location}",
+                        "TodayWeatherSummaryIntent weather in {Location}",
+                        "TodayWeatherSummaryIntent how is the weather in {Location}",
+                        "TodayWeatherSummaryIntent what's the weather in {Location}",
+                        "TodayWeatherSummaryIntent what's the weather like in {Location}",
+                        "TodayWeatherSummaryIntent what is the weather like in {Location}",
+                        "TodayWeatherSummaryIntent what is the weather in {Location}"
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+}
